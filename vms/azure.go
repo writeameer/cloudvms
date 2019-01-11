@@ -51,18 +51,18 @@ func ListRateCard() {
 
 	client := commerce.NewRateCardClient(sid)
 	client.Authorizer = authorizer
-	filter := "OfferDurableId eq 'MS-AZR-0121p' and Currency eq 'USD' and Locale eq 'en-US' and RegionInfo eq 'US'"
+	filter := "OfferDurableId eq 'MS-AZR-0121p' and Currency eq 'AUD' and Locale eq 'en-US' and RegionInfo eq 'AU'"
 	result, err := client.Get(ctx, filter)
 	if err != nil {
 		log.Fatalf(err.Error())
 	}
 
+	count := 0
 	for _, item := range *result.Meters {
 		if *item.MeterCategory == "Virtual Machines" {
-			fmt.Printf("Category: %s, \t\t  Sub Category: %s, \t\t Rate: %f \n", *item.MeterCategory, *item.MeterSubCategory, *item.MeterRates["0"])
+			count++
+			fmt.Printf("%d,%s,%s,%f,%s\n", count, *item.MeterCategory, *item.MeterName, *item.MeterRates["0"], *item.MeterRegion)
 		}
 	}
-
-	log.Println("Currency: ", *result.Currency)
 
 }
