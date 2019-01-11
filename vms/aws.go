@@ -39,8 +39,8 @@ func ListAws() {
 		instanceType := attributes["instanceType"].(string)
 		memory := attributes["memory"].(string)
 		vcpu := attributes["vcpu"].(string)
-
-		fmt.Printf("%d. Instance Type: %s, \t\t Memory: %s, \t\t vCPU: %s \n", i+1, instanceType, memory, vcpu)
+		family := attributes["instanceFamily"].(string)
+		fmt.Printf("%d. Instance Type: %s, \t\t Family: %s, \t\t Memory: %s, \t\t vCPU: %s \n", i+1, instanceType, family, memory, vcpu)
 	}
 
 	if err != nil {
