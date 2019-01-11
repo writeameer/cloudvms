@@ -1,0 +1,52 @@
+{  
+    "OfferTerms": [],  
+    "Meters": [  
+       {  
+          "MeterId": "1822fcc4-6059-4cbb-a132-54a187aaac46",  
+          "MeterName": "Compute Hours",  
+          "MeterCategory": "Virtual Machines",  
+          "MeterSubCategory": "Basic_D6 VM (Non-Windows)",  
+          "Unit": "Hours",  
+          "MeterTags": [],  
+          "MeterRates": {  
+             "0": 3.136  
+          },  
+          "EffectiveDate": "2015-02-01T00:00:00Z",  
+          "IncludedQuantity": 0.0  
+       },  
+       {  
+          "MeterId": "3c5324ad-eb8c-44c6-af9a-6741ae75fc90",  
+          "MeterName": "Data Transfer Out at 500 Mbps (GB)",  
+          "MeterCategory": "Networking",  
+          "MeterSubCategory": "ExpressRoute (IXP)",  
+          "Unit": "GB",  
+          "MeterTags": [],  
+          "MeterRates": {  
+             "0": 0.1  
+          },  
+          "EffectiveDate": "2014-08-01T00:00:00Z",  
+          "IncludedQuantity": 2048.0  
+       },  
+   
+       {  
+          "MeterId": "9ee077eb-c902-46ef-b7f9-2caeade852e0",  
+          "MeterName": "Compute Hours",  
+          "MeterCategory": "Cloud Services",  
+          "MeterSubCategory": "A6 Cloud Services",  
+          "Unit": "Hours",  
+          "MeterTags": [],  
+          "MeterRates": {  
+            "0": 0.71  
+          },  
+          "EffectiveDate": "2013-12-01T00:00:00Z",  
+          "IncludedQuantity": 0.0  
+       },  
+    …     
+    ]  ,
+    "Currency": "USD",  
+    "Locale": "en-US",  
+    "IsTaxIncluded": false,  
+    "MeterRegion": "US West",  
+    "Tags": []   
+ }  
+   
