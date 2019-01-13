@@ -8,6 +8,7 @@ func main() {
 
 	//vms.ListAws()
 
-	vms.ListRateCard()
+	vms.ListAzureVMS()
+	//vms.ListRateCard()
 
 }
